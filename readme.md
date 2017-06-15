@@ -1,10 +1,10 @@
 ## About this project
 
-This is an example project from the german Laravel book "Laravel in 60 Sekunden". ONLY FOR EDUCATIONAL PURPOSES. At this state this project is not suitable for other use cases.
+This is an example project from the german Laravel book "Laravel in 60 Minuten". ONLY FOR EDUCATIONAL PURPOSES. At this state this project is not suitable for other use cases.
 
 ## Unser Beispielprojekt
 
-Hier ist das Beispielprojekt aus "Laravel in 60 Sekunden". Wir haben das Projekt hier bereits etwas erweitert und werden es ggf. auch noch in Zukunft fortführen.
+Hier ist das Beispielprojekt aus "Laravel in 60 Minuten". Wir haben das Projekt hier bereits etwas erweitert und werden es ggf. auch noch in Zukunft fortführen.
 
 Das Projekt ist zudem mit weiteren Kommentaren im Quellcode versehen.
 
