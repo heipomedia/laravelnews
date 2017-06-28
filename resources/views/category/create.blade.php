@@ -1,9 +1,21 @@
-<form action="/category/new" method="post">
-    {{ csrf_field() }}
+@extends('layouts.app')
 
-    <h1>Neue Kategorie erstellen</h1>
+@section('content')
 
-    Name: <input type="text" name="name">
-    <input type="submit" value="Speichern">
+    <h4>Neue Kategorie erstellen</h4>
 
-</form>
+    <hr>
+
+    <form action="/category/new" method="post">
+
+        {{ csrf_field() }}
+
+        <label>Name
+            <input type="text" name="name">
+        </label>
+
+        <input type="submit" value="Speichern" class="button">
+
+    </form>
+
+@endsection

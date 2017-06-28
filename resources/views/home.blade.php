@@ -1,17 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
 
-                <div class="panel-body">
-                    You are logged in!
-                </div>
-            </div>
-        </div>
+    <h4>Dashboard</h4>
+
+    <hr>
+
+    <p>Du hast dich erfolgreich eingeloggt. Was willst du tun?</p>
+
+    <div class="button-group">
+        <a href="/news/new" class="button">News schreiben</a>
+        <a href="/category/new" class="button">Kategorie erstellen</a>
     </div>
-</div>
+
+    <a href="/" class="button secondary">Newsliste</a>
+
 @endsection

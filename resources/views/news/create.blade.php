@@ -1,28 +1,43 @@
-<form method="post" action="/news/new">
+@extends('layouts.app')
 
-    <h1>Neue News schreiben</h1>
+@section('content')
+
+    <h4>Neue News schreiben</h4>
+
+    <hr>
 
     @if (count($errors) > 0)
-    <ul>
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-    </ul>
+        <div class="callout alert">
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
     @endif
 
-    {{ csrf_field() }}
+    <form method="post" action="/news/new">
 
-    Titel: <input type="text" name="titel" />
+        {{ csrf_field() }}
 
-    <select name="category[]" multiple>
-            @foreach($categories as $c)
-                <option value="{{ $c->id }}">{{ $c->name }}</option>
-            @endforeach
-    </select>
+        <label>Titel
+            <input type="text" name="titel">
+        </label>
 
-    Text:
-    <textarea name="text"></textarea>
+        <label>Wähle eine Kategorie
+            <select name="category[]" multiple>
+                @foreach($categories as $c)
+                    <option value="{{ $c->id }}">{{ $c->name }}</option>
+                @endforeach
+            </select>
+        </label>
 
-    <input type="submit" value="Speichern" />
+        <label>Text
+            <textarea name="text" rows="8"></textarea>
+        </label>
 
-</form>
+        <input type="submit" value="Speichern" class="button">
+
+    </form>
+
+@endsection
