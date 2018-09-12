@@ -8,6 +8,7 @@ class Category extends Model
 {
     // Hier legen wir fest, dass die einzelnen Kategorien in der Tabelle "categories" gespeichert wird
     protected $table = 'categories';
+    
     // Nur das Feld "name" soll mit Daten beschrieben werden können
     protected $fillable = ['name'];
 
