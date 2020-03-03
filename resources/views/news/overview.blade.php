@@ -14,7 +14,7 @@
             <em>{{ $n->created_at->diffForHumans() }}</em>
         </p>
         <p>
-            {{ str_limit($n->text, 100) }}
+            {{ Str::limit($n->text, 100) }}
         </p>
         <a href="{{ route('news', $n->id) }}" class="button">Zur News</a>
         <hr>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Category;
 
 class CategoryController extends Controller
@@ -33,7 +34,7 @@ class CategoryController extends Controller
 
         // Das neue Category-Model wird mit Daten aus dem Formular gefüllt
         $category->name = $request->name;
-        $category->slug = str_slug($request->name);
+        $category->slug = Str::slug($request->name, '-');
 
         // Die Kategorie wird gespeichert. Hier trägt sie Laravel in der Datenbank ein.
         $category->save();
