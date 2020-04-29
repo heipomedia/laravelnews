@@ -12,7 +12,7 @@
     "devDependencies": {
         "cross-env": "^7.0",
         "foundation-sites": "^6.6",
-        "jquery": "^3.4",
+        "jquery": "^3.5",
         "laravel-mix": "^5.0.1",
         "motion-ui": "^2.0",
         "resolve-url-loader": "^3.1.0",
